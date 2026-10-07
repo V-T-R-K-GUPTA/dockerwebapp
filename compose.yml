@@ -2,7 +2,7 @@ version: "3.9"
 
 services:
   devopsdb:
-    image: tejavakacharla/flm-oct:db
+    image: tejavakacharla/pratice-oct:db
     ports:
       - "3306:3306"
     deploy:
@@ -11,9 +11,9 @@ services:
       - mynetwork
 
   application:
-    image: tejavakacharla/flm-oct:javaapp
+    image: tejavakacharla/pratice-oct:javaapp
     ports:
-      - "1111:8080"
+      - "1112:8080"
     deploy:
       replicas: 3
     depends_on:
